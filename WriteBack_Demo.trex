@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
+  <dashboard-extension id="com.parikshitshinge.extension.writebackdemo" extension-version="1.0.0">
+    <default-locale>en_US</default-locale>
+    <name resource-id="name"/>
+    <description>Write-back Demo</description>
+    <author name="Parikshit Shinge" email="shinge.parikshit@gmail.com" organization="NCS" website="https://notarealwebsite.com"/>
+    <min-api-version>1.0</min-api-version>
+    <source-location>
+      <url>http://localhost:8888</url>
+    </source-location>
+      <icon>iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAIAAAAnX375AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANkSURBVFhH7ZbbTxNBFMb9a4yJEe/6QKKJMdFXn3ww0cT4pj4RUW6BKAFCb5SWi0ZDCA0EW4i1FEgQDAItNpGWLSw0gAWaWuy2S7vddu9bD3ZRQmjLENoX/TJP53T6mzPnm5k9kS66/iP3SZZlmqaDweDyjnwkuS1JkpJDEQJSFMVQKOR0Os1m88CAZXV1VRAEJYciBCTP8+vr68PDdr1e19qqn5+fLwbS7/fbbB81GpVOp3G73RBRcihCQEJNgLTbbVqtuqVF5/F4ioGEjbXbh6DEQiE5jkvtimEYiqJ8Pp/VatVqNTqd1uVyQQTiyi9SKZZlYVlgbGV+FuVCLi3hDsf07nBMTX0B73R1dalUzWq1CkwLEYdjBrIzM9Ozs06vF9vaCsFClflZlAs5NGRrazP8GUZjq17fArCmpkYYUChEMimDQd/Z2TE4aPF6vYlEQpmfRbmQFos58+97R2NjQ2bsC4KNTaYet3uOouLK/CzKhdzY2FjcFY7jGIZNTk6aTCYoVKNRj4wMQwTHM/kF6ILf/50ko3k9lQu5T2ANWAQ4FuwDjsWwYl0F0ODincsMsqhXwd4qwa4eT+EvPABAL0dHRwwGOBtG8E7BewkAeLzgTujv74f3Cx4veM6UHIoQkJknOhAIwMGAI0GSZMGfaJAoy5wopngehnAkHggNmZbEtMDKLC1zdFo6SiNBKBsrsEJgITnRGXv7MPbuEYdPyEKeG/xAoSC5FOebiveWhV+cJirPMM4+iCg5FCEhGX7FSb2vIGovEXVXGUevzOR5NA4UCpJn+LWvlKWKqLtC1F6GHZZiIfCxkj60kHrJCQEsYa0nXpYSNRcocwW/PrdjKEQhINOyKEY36E/tkeZb4coSUn8nNdMj0aSSPbRQkABNxZhvH7Zf3w9XnwtXn4/1PGUXJ2B7oakylwRLH6ZoRKTA8ZtYwtYQabgefn4qUn8t1v04Od4B6+CWJ4UgvlN0visCDZmWJSlJsvhEvL888qo0/OwkUXU2qrpNtt+L95Ulp7uFH0uycHxfBbuSJTrK4p/jfeWRpptEzUWg/qwsIRpvUIO1/Jor7/1wBOTvWllajG6yi+P0qC7e/YQ03iXfPKDHjLDthajyr8A1wtYKv+pkvWOAhyMkJaLH3cvj0L+ATKd/AWQwFYrXDA4gAAAAAElFTkSuQmCC</icon>
+    <permissions>
+        <permission>full data</permission>
+    </permissions>
+  </dashboard-extension>
+  <resources>
+    <resource id="name">
+      <text locale="en_US">Write-back Tableau Extension</text>
+    </resource>
+  </resources>
+</manifest>
