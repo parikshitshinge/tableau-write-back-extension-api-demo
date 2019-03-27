@@ -6,34 +6,34 @@
     <script type="text/javascript" src="http://cdn.datatables.net/v/bs-3.3.7/jq-3.2.1/jq-3.2.1/dt-1.10.16/b-1.4.2/b-colvis-1.4.2/cr-1.4.1/fh-3.1.3/r-2.2.0/sc-1.4.3/datatables.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="WriteBackScript.js"> </script>
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<!-- Include the Tableau Extensions library so we can communicate with Tableau -->
 	<script src="lib/tableau-extensions-1.latest.js"></script>
 
 </head>
 
 <body>
-
+<div class="container">
 <h4 align="center">Target Customers Configuration</h4>
 
 <br>
+<div class="form-group">
+<label for="cust_id">Customer ID:</label>  
+<input type="text" class="form-control" name="cust_id" id="cust_id" placeholder="Enter ID" disabled /><br />
 
-Customer ID:  <input type="text" name="cust_id" id="cust_id" placeholder="Enter ID" disabled /><br />
+<label for="cust_name">Customer Name:</label>  
+<input type="text" class="form-control" name="cust_name" id="cust_name" placeholder="Enter Customer Name" disabled /><br />
+</div>
 
+<label for="target_flag">Target Flag:</label>  
+<input type="radio" class="radio-inline" name="target_flag" id="target_flag" value="Y"> Y&nbsp;&nbsp;
+<input type="radio" class="radio-inline" name="target_flag" id="target_flag" value="N"> N
 <br>
-Customer Name:  <input type="text" name="cust_name" id="cust_name" placeholder="Enter Customer Name" disabled /><br />
-
 <br>
 
-Target Flag:   
+<button title="Write Back" class="form-control" type="button" id="write_back_button" onclick = "writeToDatabase()">Update</button>
 
-<input type="radio" name="target_flag" id="target_flag" value="Y"> Y&nbsp;&nbsp;
-<input type="radio" name="target_flag" id="target_flag" value="N"> N
-<br>
-<br>
-
-<button title="Write Back" type="button" id="write_back_button" onclick = "writeToDatabase()">Update</button>
-
-
+</div>
 </body>
 </html>
